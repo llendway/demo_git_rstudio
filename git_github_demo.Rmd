@@ -31,6 +31,8 @@ I am making a change.
 
 7. Collaborator pulls changes, makes a new change, commits, and pushes. 
 
+Hello I am Lisa's sister :-)
+
 8. I pull in change. 
 
 9. Uh oh, we don't communicate and both try to make changes to the document at the same time -> merge conflict! Show how to resolve. 
