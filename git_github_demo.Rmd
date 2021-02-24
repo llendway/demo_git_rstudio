@@ -62,7 +62,8 @@ mpg %>%
               color = "lightblue") +
   labs(title = "Smaller cars potentially have better city MPG, on average",
        x = "",
-       y = "") +
+       y = "",
+       caption = "Lisa & Heather made this") +
   theme_minimal() +
   theme(plot.title.position = "plot",
         panel.grid.major.y = element_blank())
