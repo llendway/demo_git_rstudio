@@ -60,7 +60,7 @@ mpg %>%
              y = class)) +
   geom_jitter(height = .2,
               color = "lightblue") +
-  labs(title = "Smaller cars have greater city MPG, on average",
+  labs(title = "Smaller cars potentially have better city MPG, on average",
        x = "",
        y = "") +
   theme_minimal() +
