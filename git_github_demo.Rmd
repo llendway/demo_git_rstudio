@@ -27,6 +27,8 @@ This will be the document we put on GitHub.
  
 6. I make a change, commit, and push.
 
+I am making a change.
+
 7. Collaborator pulls changes, makes a new change, commits, and pushes. 
 
 8. I pull in change. 
