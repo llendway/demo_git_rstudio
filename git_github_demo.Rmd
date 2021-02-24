@@ -58,7 +58,7 @@ Hello I am Lisa's sister :-)
 mpg %>% 
   ggplot(aes(x = cty, 
              y = class)) +
-  geom_jitter(height = .2,
+  geom_jitter(height = .3,
               color = "lightblue") +
   labs(title = "Smaller cars potentially have better city MPG, on average",
        x = "",
