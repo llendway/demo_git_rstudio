@@ -1,0 +1,66 @@
+---
+title: "Lisa and Heather do Git and GitHub"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE, message = FALSE)
+```
+
+```{r libraries}
+library(tidyverse)    # for wrangling and graphing
+```
+
+This will be the document we put on GitHub.
+
+0. Make sure Git and GitHub are installed - see the Create GitHub account and Install Git sections of my [tutorial](https://github.com/llendway/github_for_collaboration/blob/master/github_for_collaboration.md)
+
+1. Create a repository on [GitHub](https://github.com/). Always add a README and think about a license. 
+
+2. Clone the repo to R Studio.  
+
+3. Save this file to that repository and commit and push changes.
+
+4. Add collaborator.
+
+5. Collaborator clones repo to R Studio. 
+ 
+6. I make a change, commit, and push.
+
+7. Collaborator pulls changes, makes a new change, commits, and pushes. 
+
+8. I pull in change. 
+
+9. Uh oh, we don't communicate and both try to make changes to the document at the same time -> merge conflict! Show how to resolve. 
+
+10. We could keep working in that way. Or, we could add branches. Show how to add a branch in R by clicking on the "branch" in the Git tab (next to settings). Show how it also changes on GitHub. 
+
+11. Make a change to the file in a branch (a small change - like some words) and commit and push. Show what shows up in GitHub (pull request - go through and merge and delete branch). Pull changes back to R Studio.
+
+12. Add a new branch. Make a harder change, commit, and push. You may run into changes that need resolving. 
+
+13. Show creating and issue and using branching/PR to solve issue and close issue.
+
+14. I saved a file but don't want the changes I just made. You can right click on the file and choose revert. You could also choose diff to see how it has changed from its last version.
+
+15. Oh shoot (or maybe a worse word), I didn't mean to commit that! (or I can't push what I just committed). We need to move to the command line in the terminal. When there, use `git reset HEAD~1`. This will bring back all the things you committed - so you can delete them if you really don't want them at all or edit at will and recommit.
+
+16. I did it again! But now I've pushed it! How do I fix this? We can go back to a previous commit by using `git revert <SHA>` in the terminal, where `<SHA>` is the alpha numeric string that defines that commit. This actually adds another commit (see [this](https://ohi-science.org/news/github-going-back-in-time) resource). You may end up with a merge conflict, which you will need to resolve (I'd recommend doing that inside of R Studio) and if you end up in a place with a bunch of `####` symbols in the terminal, type `:q` to get out.
+
+17. When in doubt, ["Burn it all down"](https://happygitwithr.com/burn.html) ~ Jenny Bryan
+
+
+```{r}
+mpg %>% 
+  ggplot(aes(x = cty, 
+             y = class)) +
+  geom_jitter(height = .2,
+              color = "lightblue") +
+  labs(title = "Smaller cars have better city MPG, on average",
+       x = "",
+       y = "") +
+  theme_minimal() +
+  theme(plot.title.position = "plot",
+        panel.grid.major.y = element_blank())
+```
+
