@@ -51,6 +51,11 @@ Hello I am Lisa's sister :-)
 
 16. I did it again! But now I've pushed it! How do I fix this? We can go back to a previous commit by using `git revert <SHA>` in the terminal, where `<SHA>` is the alpha numeric string that defines that commit. This actually adds another commit (see [this](https://ohi-science.org/news/github-going-back-in-time) resource). You may end up with a merge conflict, which you will need to resolve (I'd recommend doing that inside of R Studio) and if you end up in a place with a bunch of `####` symbols in the terminal, type `:q` to get out.
 
+```{r}
+head(mpg)
+```
+
+
 17. When in doubt, ["Burn it all down"](https://happygitwithr.com/burn.html) ~ Jenny Bryan
 
 
